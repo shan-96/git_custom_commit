@@ -1,4 +1,4 @@
-package org.jetbrains.plugins.template
+package com.github.shan-96.gitcustomcommit
 
 import com.intellij.AbstractBundle
 import org.jetbrains.annotations.NonNls

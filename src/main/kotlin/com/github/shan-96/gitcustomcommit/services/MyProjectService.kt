@@ -1,7 +1,7 @@
-package org.jetbrains.plugins.template.services
+package com.github.shan-96.gitcustomcommit.services
 
 import com.intellij.openapi.project.Project
-import org.jetbrains.plugins.template.MyBundle
+import com.github.shan-96.gitcustomcommit.MyBundle
 
 class MyProjectService(project: Project) {
 

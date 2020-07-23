@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.shan-96.gitcustomcommit.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.shan-96.gitcustomcommit.MyBundle
 
 class MyApplicationService {
 
