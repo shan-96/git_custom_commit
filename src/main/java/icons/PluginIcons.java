@@ -1,4 +1,4 @@
-package com.github.shan96.git_custom_commit.icons;
+package icons;
 
 import com.intellij.openapi.util.IconLoader;
 import javax.swing.*;

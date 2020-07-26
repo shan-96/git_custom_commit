@@ -3,17 +3,28 @@
     <name>git_custom_commit</name>
     <vendor>shan-96</vendor>
 
+    <description><![CDATA[
+        <p>Automate and formalise your commit convention</p>
+    ]]></description>
+
+    <idea-version since-build="145.0"/>
+
     <!-- Product and plugin compatibility requirements -->
     <!-- https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.vcs</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.shan-96.gitcustomcommit.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.shan-96.gitcustomcommit.services.MyProjectService"/>
+        <!-- Add your extensions here -->
     </extensions>
 
-    <projectListeners>
-        <listener class="com.github.shan-96.gitcustomcommit.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </projectListeners>
+    <actions>
+        <action id="Commit.Button" class="com.github.shan96.git_custom_commit.base.CreateCommitAction"
+                text="Create Commit Message"
+                description="Create commit message"
+                icon="PluginIcons.LOAD">
+            <add-to-group group-id="Vcs.MessageActionGroup" anchor="first"/>
+        </action>
+    </actions>
+
 </idea-plugin>
