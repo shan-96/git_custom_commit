@@ -40,6 +40,7 @@ class CommitMessage {
       builder.append(System.lineSeparator());
     }
 
+    builder.append(changeType.label()).append(": ");
     builder
         .append(shortDescription)
         .append(System.lineSeparator())
@@ -52,7 +53,8 @@ class CommitMessage {
           .append(System.lineSeparator())
           .append("Affected Fields: (")
           .append(changeScope)
-          .append(')').append(System.lineSeparator());
+          .append(')')
+          .append(System.lineSeparator());
     }
 
     if (isNotBlank(breakingChanges)) {

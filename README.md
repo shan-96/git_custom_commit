@@ -24,6 +24,9 @@
 ![screenshot1](static/commit1.PNG)
 ![screenshot2](static/commit2.PNG)
 ![screenshot3](static/commit3.PNG)
+
+## Compatibility Notes
+- The plugin is compatible with IntelliJ IDEA version 2019.1 and higher
 ---
 Plugin based on the [IntelliJ Platform Plugin Template][template].
 

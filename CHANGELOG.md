@@ -4,16 +4,10 @@
 
 ## [Unreleased]
 ### Added
-
-### Changed
-
-### Deprecated
-
-### Removed
-
+- Compatibility notes in readme for source repo
 ### Fixed
+- No change type visible in formatted message issue
 
-### Security
 ## [0.0.4]
 ### Changed
 - Commit message format
