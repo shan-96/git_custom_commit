@@ -8,7 +8,6 @@
 ### Fixed
 - Issue with form not opening
 
-### Security
 ## [0.0.3]
 ### Added
 - Added compatibility checks (Compatible with 2019 onwards)
