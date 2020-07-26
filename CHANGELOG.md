@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 ### Added
+- TBD
+
+## [0.0.2]
+### Added
 - Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
 - Added basic commit support template.
 - Checked InteliJ Convention and Compatibility.
