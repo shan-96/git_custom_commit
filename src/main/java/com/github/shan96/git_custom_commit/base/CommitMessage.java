@@ -25,7 +25,7 @@ class CommitMessage {
             breakingChanges);
   }
 
-  private String buildContent(
+  private static String buildContent(
       ChangeType changeType,
       String changeScope,
       String shortDescription,
@@ -33,29 +33,36 @@ class CommitMessage {
       String closedIssues,
       String breakingChanges) {
     StringBuilder builder = new StringBuilder();
-    builder.append(changeType.label());
-    if (isNotBlank(changeScope)) {
-      builder.append('(').append(changeScope).append(')');
+    if (isNotBlank(closedIssues)) {
+      for (String closedIssue : closedIssues.split(",")) {
+        builder.append(System.lineSeparator()).append("JIRA: ").append(closedIssue);
+      }
+      builder.append(System.lineSeparator());
     }
+    builder
+        .append(changeType.label())
+        .append('(')
+        .append(changeType.getDescription())
+        .append("): ")
+        .append(System.lineSeparator());
     builder
         .append(": ")
         .append(shortDescription)
         .append(System.lineSeparator())
-        .append(System.lineSeparator())
         .append(WordUtils.wrap(longDescription, MAX_LINE_LENGTH));
+
+    if (isNotBlank(changeScope)) {
+      builder
+          .append(System.lineSeparator())
+          .append("Affected Fields: (")
+          .append(changeScope)
+          .append(')');
+    }
 
     if (isNotBlank(breakingChanges)) {
       builder
           .append(System.lineSeparator())
-          .append(System.lineSeparator())
           .append(WordUtils.wrap("DoD Followed: " + breakingChanges, MAX_LINE_LENGTH));
-    }
-
-    if (isNotBlank(closedIssues)) {
-      builder.append(System.lineSeparator());
-      for (String closedIssue : closedIssues.split(",")) {
-        builder.append(System.lineSeparator()).append("Closes ").append(closedIssue);
-      }
     }
 
     return builder.toString();

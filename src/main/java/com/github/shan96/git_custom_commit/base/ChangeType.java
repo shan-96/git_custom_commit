@@ -34,6 +34,10 @@ public enum ChangeType {
     return this.name();
   }
 
+  public String getDescription() {
+    return this.description;
+  }
+
   @Override
   public String toString() {
     return String.format("%s - %s", this.label(), this.description);
