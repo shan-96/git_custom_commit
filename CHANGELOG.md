@@ -3,6 +3,18 @@
 # git_custom_commit Changelog
 
 ## [Unreleased]
+### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+## [0.0.4]
 ### Changed
 - Commit message format
 ### Fixed
