@@ -35,28 +35,24 @@ class CommitMessage {
     StringBuilder builder = new StringBuilder();
     if (isNotBlank(closedIssues)) {
       for (String closedIssue : closedIssues.split(",")) {
-        builder.append(System.lineSeparator()).append("JIRA: ").append(closedIssue);
+        builder.append("JIRA: ").append(closedIssue).append(System.lineSeparator());
       }
       builder.append(System.lineSeparator());
     }
+
     builder
-        .append(changeType.label())
-        .append('(')
-        .append(changeType.getDescription())
-        .append("): ")
-        .append(System.lineSeparator());
-    builder
-        .append(": ")
         .append(shortDescription)
         .append(System.lineSeparator())
-        .append(WordUtils.wrap(longDescription, MAX_LINE_LENGTH));
+        .append(System.lineSeparator())
+        .append(WordUtils.wrap(longDescription, MAX_LINE_LENGTH))
+        .append(System.lineSeparator());
 
     if (isNotBlank(changeScope)) {
       builder
           .append(System.lineSeparator())
           .append("Affected Fields: (")
           .append(changeScope)
-          .append(')');
+          .append(')').append(System.lineSeparator());
     }
 
     if (isNotBlank(breakingChanges)) {

@@ -1,11 +1,11 @@
 package com.github.shan96.git_custom_commit.base;
 
 public enum ChangeType {
-  FE_P("FE - Planned", "A new feature from product roadmap"),
-  FE_S("FE - Sponsored", "A new feature from sponsored development"),
-  FE_G("FE - Gap", "A new feature identified from CI/Recon/IA as gap"),
+  FE_PLANNED("FE - Planned", "A new feature from product roadmap"),
+  FE_SPONSORED("FE - Sponsored", "A new feature from sponsored development"),
+  FE_GAP("FE - Gap", "A new feature identified from CI/Recon/IA as gap"),
   FIX_CI("Bug Fixes - CI", "A bug fix from CI"),
-  FIX_R("Bug Fixes - Recon", "A bug fix from Recon"),
+  FIX_RECON("Bug Fixes - Recon", "A bug fix from Recon"),
   DOCS("Documentation", "Documentation only changes"),
   STYLE(
       "Styles",
@@ -32,10 +32,6 @@ public enum ChangeType {
 
   public String label() {
     return this.name();
-  }
-
-  public String getDescription() {
-    return this.description;
   }
 
   @Override
