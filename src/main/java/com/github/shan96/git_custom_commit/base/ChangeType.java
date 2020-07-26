@@ -1,26 +1,24 @@
 package com.github.shan96.git_custom_commit.base;
 
-/**
- * From https://github.com/commitizen/conventional-commit-types
- *
- * @author Damien Arrachequesne
- */
 public enum ChangeType {
-  FEAT("Features", "A new feature"),
-  FIX("Bug Fixes", "A bug fix"),
+  FE_P("FE - Planned", "A new feature from product roadmap"),
+  FE_S("FE - Sponsored", "A new feature from sponsored development"),
+  FE_G("FE - Gap", "A new feature identified from CI/Recon/IA as gap"),
+  FIX_CI("Bug Fixes - CI", "A bug fix from CI"),
+  FIX_R("Bug Fixes - Recon", "A bug fix from Recon"),
   DOCS("Documentation", "Documentation only changes"),
   STYLE(
       "Styles",
       "Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)"),
   REFACTOR("Code Refactoring", "A code change that neither fixes a bug nor adds a feature"),
   PERF("Performance Improvements", "A code change that improves performance"),
-  TEST("Tests", "Adding missing tests or correcting existing tests"),
+  TEST("Tests", "Adding missing tests (ATC / Unit) or correcting existing tests"),
   BUILD(
       "Builds",
       "Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)"),
   CI(
       "Continuous Integrations",
-      "Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)"),
+      "Changes to our CI configuration files and scripts (example scopes: Jenkins, Ant, YAML etc)"),
   CHORE("Chores", "Other changes that don't modify src or test files"),
   REVERT("Reverts", "Reverts a previous commit");
 
@@ -33,7 +31,7 @@ public enum ChangeType {
   }
 
   public String label() {
-    return this.name().toLowerCase();
+    return this.name();
   }
 
   @Override
