@@ -6,6 +6,10 @@
 ### Added
 - TBD
 
+## [0.0.3]
+### Added
+- Added compatibility checks (Compatible with 2019 onwards)
+
 ## [0.0.2]
 ### Added
 - Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
