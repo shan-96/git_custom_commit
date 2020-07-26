@@ -1,4 +1,4 @@
-package com.github.shan96.git_custom_commit;
+package com.github.shan96.git_custom_commit.base;
 
 import static org.apache.commons.lang.StringUtils.isNotBlank;
 

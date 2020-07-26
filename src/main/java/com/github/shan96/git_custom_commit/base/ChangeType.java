@@ -1,4 +1,4 @@
-package com.github.shan96.git_custom_commit;
+package com.github.shan96.git_custom_commit.base;
 
 /**
  * From https://github.com/commitizen/conventional-commit-types

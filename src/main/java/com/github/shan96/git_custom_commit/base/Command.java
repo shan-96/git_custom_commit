@@ -1,4 +1,4 @@
-package com.github.shan96.git_custom_commit;
+package com.github.shan96.git_custom_commit.base;
 
 import java.io.BufferedReader;
 import java.io.File;

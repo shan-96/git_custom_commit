@@ -1,4 +1,4 @@
-package com.github.shan96.git_custom_commit;
+package com.github.shan96.git_custom_commit.base;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
