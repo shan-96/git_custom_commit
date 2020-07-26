@@ -21,9 +21,9 @@
   <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
 
 ## Usage
-![screenshot1](static/commit1.png)
-![screenshot2](static/commit2.png)
-![screenshot3](static/commit3.png)
+![screenshot1](static/commit1.PNG)
+![screenshot2](static/commit2.PNG)
+![screenshot3](static/commit3.PNG)
 ---
 Plugin based on the [IntelliJ Platform Plugin Template][template].
 
