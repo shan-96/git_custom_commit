@@ -3,15 +3,10 @@
 # git_custom_commit Changelog
 
 ## [Unreleased]
-### Added
-
 ### Changed
-
-### Deprecated
-
-### Removed
-
+- Commit message format
 ### Fixed
+- Issue with form not opening
 
 ### Security
 ## [0.0.3]
