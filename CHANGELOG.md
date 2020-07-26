@@ -4,6 +4,18 @@
 
 ## [Unreleased]
 ### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+## [0.0.3]
+### Added
 - Added compatibility checks (Compatible with 2019 onwards)
 
 ## [0.0.2]
