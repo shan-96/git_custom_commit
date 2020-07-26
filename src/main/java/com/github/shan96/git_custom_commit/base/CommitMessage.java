@@ -48,7 +48,7 @@ class CommitMessage {
       builder
           .append(System.lineSeparator())
           .append(System.lineSeparator())
-          .append(WordUtils.wrap("BREAKING CHANGE: " + breakingChanges, MAX_LINE_LENGTH));
+          .append(WordUtils.wrap("DoD Followed: " + breakingChanges, MAX_LINE_LENGTH));
     }
 
     if (isNotBlank(closedIssues)) {
