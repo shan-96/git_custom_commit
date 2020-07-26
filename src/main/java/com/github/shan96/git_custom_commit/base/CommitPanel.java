@@ -1,7 +1,6 @@
 package com.github.shan96.git_custom_commit.base;
 
 import com.intellij.openapi.project.Project;
-import com.intellij.openapi.vfs.VfsUtil;
 import java.io.File;
 import javax.swing.*;
 
@@ -18,7 +17,7 @@ public class CommitPanel {
     for (ChangeType type : ChangeType.values()) {
       changeType.addItem(type);
     }
-    File workingDirectory = VfsUtil.virtualToIoFile(project.getBaseDir());
+    File workingDirectory = new File(project.getBasePath() != null ? project.getBasePath() : "/");
     Command.Result result =
         new Command(
                 workingDirectory,
