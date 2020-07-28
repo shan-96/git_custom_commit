@@ -3,17 +3,8 @@
 # git_custom_commit Changelog
 
 ## [Unreleased]
-### Added
-
 ### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
+- Changed logo for plugin
 ## [0.0.5]
 ### Added
 - Compatibility notes in readme for source repo
