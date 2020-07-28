@@ -4,14 +4,7 @@
 
 ## [Unreleased]
 ### Added
-
-### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
+- Added description on plugin page
 
 ### Security
 ## [0.0.6]
