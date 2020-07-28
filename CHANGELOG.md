@@ -3,6 +3,18 @@
 # git_custom_commit Changelog
 
 ## [Unreleased]
+### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+## [0.0.6]
 ### Changed
 - Changed logo for plugin
 ## [0.0.5]
