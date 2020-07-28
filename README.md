@@ -6,6 +6,13 @@
 
 <!-- Plugin description -->
 <h3>Automate and formalise your commit convention</h3>
+## Usage
+![screenshot1](static/commit1.PNG)
+![screenshot2](static/commit2.PNG)
+![screenshot3](static/commit3.PNG)
+
+## Compatibility Notes
+- The plugin is compatible with IntelliJ IDEA version 2019.1 and higher
 <!-- Plugin description end -->
 
 ## Installation
@@ -20,13 +27,6 @@
   Download the [latest release](https://github.com/shan-96/git_custom_commit/releases/latest) and install it manually using
   <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
 
-## Usage
-![screenshot1](static/commit1.PNG)
-![screenshot2](static/commit2.PNG)
-![screenshot3](static/commit3.PNG)
-
-## Compatibility Notes
-- The plugin is compatible with IntelliJ IDEA version 2019.1 and higher
 ---
 Plugin based on the [IntelliJ Platform Plugin Template][template].
 
