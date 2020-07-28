@@ -4,13 +4,14 @@
 [![Version](https://img.shields.io/jetbrains/plugin/v/com.github.shan-96.gitcustomcommit.svg)](https://plugins.jetbrains.com/plugin/com.github.shan-96.gitcustomcommit)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/com.github.shan-96.gitcustomcommit.svg)](https://plugins.jetbrains.com/plugin/com.github.shan-96.gitcustomcommit)
 
+<iframe frameborder="none" width="245px" height="48px" src="https://plugins.jetbrains.com/embeddable/install/14776"></iframe>
+
 <!-- Plugin description -->
 <h3>Automate and formalise your commit convention</h3>
 <b>With this plugin you can:</b>
 <ol>Draft custom git commit messages</ol>
 <ol>Tag git messages as some type</ol>
 <ol>Ensure that particular format is used as commit convention in your project</ol>
-
 <!-- Plugin description end -->
 
 ## Installation
