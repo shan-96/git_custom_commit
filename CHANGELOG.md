@@ -4,16 +4,7 @@
 
 ## [Unreleased]
 ### Added
-
-### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
+- Added compatibility support for IDEA 2020
 ## [0.0.1]
 ### Added
 - Added git commit plugin
